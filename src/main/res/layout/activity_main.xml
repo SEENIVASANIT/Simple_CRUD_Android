@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textColorHint="#000"
+        app:endIconMode="clear_text"
+        app:helperTextEnabled="true"
+        app:helperTextTextColor="#A818C1"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-thin"
+            android:hint="Enter email id"
+            android:inputType="text"
+            android:id="@+id/name"
+            android:textStyle="bold" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+   <com.google.android.material.textfield.TextInputLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+       android:layout_margin="10dp"
+       android:textColorHint="#000"
+       app:endIconMode="clear_text"
+       app:helperTextEnabled="true"
+       app:helperTextTextColor="#A818C1"
+       tools:ignore="MissingConstraints"
+       tools:layout_editor_absoluteX="10dp"
+       >
+       <com.google.android.material.textfield.TextInputEditText
+           android:layout_width="match_parent"
+
+           android:fontFamily="sans-serif-thin"
+           android:layout_height="100pt"
+           android:hint="Enter email id"
+           android:textAlignment="textStart"
+           android:inputType="textMultiLine"
+           android:id="@+id/desc"
+           android:layerType="software"
+
+           android:textStyle="bold"/>
+   </com.google.android.material.textfield.TextInputLayout>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/baseline_cloud_upload_24"
+
+        android:id="@+id/imageView"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload image"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20dp"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:textSize="30dp"
+        android:letterSpacing="0.1"
+        android:id="@+id/save"
+        android:layout_margin="10dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show data"
+        android:textSize="30dp"
+        android:letterSpacing="0.1"
+        android:id="@+id/update"
+        android:layout_margin="10dp"/>
+
+</LinearLayout>
